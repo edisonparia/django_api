@@ -1,8 +1,6 @@
 # django_api
 
-Este repositorio contiene un ejemplo sencillo de una API monolítica
-utilizando [Flask](https://flask.palletsprojects.com/). Expone un único
-endpoint `/items` que permite realizar peticiones **GET** y **POST**.
+Este repositorio contiene un ejemplo sencillo de una API utilizando [Django](https://www.djangoproject.com/). Expone un único endpoint `/items` que permite realizar peticiones **GET** y **POST**.
 
 ## Instalación
 
@@ -15,14 +13,13 @@ pip install -r requirements.txt
 Inicie la aplicación con:
 
 ```bash
-python app.py
+python manage.py runserver 0.0.0.0:8000
 ```
 
-La API quedará escuchando en `http://localhost:8000/items`.
+La API quedará escuchando en `http://localhost:8000/items/`.
 
-- **GET** `/items` devuelve la lista de items en formato JSON.
-- **POST** `/items` crea un nuevo item. Envíe un cuerpo JSON con la
-  propiedad `name`.
+- **GET** `/items/` devuelve la lista de items en formato JSON.
+- **POST** `/items/` crea un nuevo item. Envíe un cuerpo JSON con la propiedad `name`.
 
 ## Licencia
 
